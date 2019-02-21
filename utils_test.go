@@ -36,7 +36,7 @@ func TestGetRequestFail(t *testing.T) {
 		t.Fatal("Wrong error")
 	}
 
-	msg := "Get http://: http: no Host in request URL\n"
+	msg := "Get http:: http: no Host in request URL\n"
 	if !strings.Contains(buffer.String(), msg) {
 		t.Fatal("GET request has failed for an unexpected reason")
 	}
